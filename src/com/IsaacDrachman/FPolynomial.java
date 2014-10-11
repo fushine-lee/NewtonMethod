@@ -1,7 +1,7 @@
 package com.IsaacDrachman;
 
 /**
- * Function-type class for polynomial functions.
+ * Function-type class for polynomials.
  */
 public class FPolynomial extends Func {
 
@@ -39,15 +39,18 @@ public class FPolynomial extends Func {
     public String toString() {
         String formula = "";
         for (int exponent = coeffs.length-1; exponent >= 0; exponent--) {
-            formula += Math.abs(coeffs[exponent]);
-            if (exponent == 1)
-                formula += "x";
-            if (exponent > 1)
-                formula += "x^"+exponent;
+            if (coeffs[exponent] != 0.0) {
+                if (Math.abs(coeffs[exponent]) != 1.0 || exponent == 0)
+                    formula += Math.abs(coeffs[exponent]);
+                if (exponent == 1)
+                    formula += "x";
+                if (exponent > 1)
+                    formula += "x^" + exponent;
+            }
             if (exponent > 0) {
                 if (coeffs[exponent-1] < 0)
                     formula += " - ";
-                else
+                else if (coeffs[exponent-1] > 0)
                     formula += " + ";
             }
         }

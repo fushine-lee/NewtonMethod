@@ -21,7 +21,7 @@ public abstract class Func {
     abstract public Func diff();
 
     /**
-     * Returns the formula of this function for display.
+     * Returns the formula of this function for printing.
      *
      * @return formula of function
      */
