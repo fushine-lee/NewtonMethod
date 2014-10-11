@@ -5,7 +5,7 @@ Java implementation of Newton's Method for approximating roots of real-valued fu
 
 First Commit (10/11/14):
 - Added Func.java
-  - abstract class defining what a function-type class should implement (apply, diff, toString)
+  - abstract class defining what a function should implement (apply, diff, toString)
 - Added FPolynomial.java
   - simple polynomial function implementation
 - Added NewtonMethod.java 
