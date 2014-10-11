@@ -6,9 +6,9 @@ package com.IsaacDrachman;
 public class NewtonMethod {
 
     /**
-     * Iteratively approximates nearest root of a given function
+     * Iteratively approximates root of a given function.
      *
-     * @param x0 point to start iteration
+     * @param x0 starting point
      * @param f function to find zero
      * @param maxSteps length of iteration (in steps)
      * @return approximate zero
