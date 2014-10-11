@@ -1,7 +1,7 @@
 NewtonMethod
 ============
 
-Small Java implementation of Newton's Method for finding roots of functions.
+Java implementation of Newton's Method for approximating roots of real-valued functions.
 
 First Commit (10/11/14):
 - Added Func.java
